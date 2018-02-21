@@ -1,0 +1,156 @@
+.PayCode {
+    margin: 20px auto;
+    position: relative;
+}
+.PayCode:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.PayIMG {
+	padding: 5px;
+	border-radius: 4px;
+	position: relative;
+}
+.PayIMG .alipay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    margin-left: -19px;
+    margin-top: -19px;
+    background-size: 100%;
+    background-image: url('../img/alipay-icon.png');
+}
+.PayIMG img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+.Paytext {
+	color: #888;
+	margin-top: 5px;
+	text-align: center;
+    padding: 5px;
+}
+.PrivateKeyDiv {
+    position: fixed;
+    width: 450px;
+    padding: 20px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0 5px 12px rgba(15,27,39,.4);
+    transform: translateX(-50%) translateY(-50%);
+}
+.PrivateKeyDiv .close {
+    position: absolute;
+    right: -30px;
+    top: -35px;
+    color: #FFF;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.PrivateKeyDiv .close:hover {
+	opacity: .85;
+}
+.fa-question-circle {
+	position: relative;
+}
+.fa-question-circle:hover img {
+	display: block !important;
+	transition: all .5s;
+}
+.fa-question-circle img {
+	position: absolute;
+    z-index: 1050;
+	max-width: 600px;
+	display: none;
+	border-radius: 4px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+.Key {
+    padding: 10px;
+    margin: 0 0 30px;
+    font-size: 13px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
+.mask_Div {
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	background: rgba(26,53,71,.85);
+}
+.loading {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+}
+.loading:before {
+    position: absolute;
+    content: '';
+    background-color: rgba(0,0,0,.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.loading .main {
+	position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    top: 50%;
+    text-align: center;
+	transform:translate( 0, -150px );
+}
+.loading .main h3 {
+	color: #FFF;
+}
+.icon-holder {
+    position: relative;
+    display: inline-block;
+}
+.icon-holder svg path {
+	fill: #70C72F;
+}
+
+hr {
+	margin-top: 15px;
+	border-top: 1px solid #EEE;
+}
+
+.btn-pagepay {
+	color: #FFF;
+    padding: 10px 25px;
+	border-color: #5A9FE6;
+	background-color: #5A9FE6;
+}
+.btn-pagepay:hover,
+.btn-pagepay:focus {
+	color: #FFF;
+	border-color: #4292e4;
+	background-color: #4292e4;
+}
